@@ -1,0 +1,71 @@
+﻿<Page
+    x:Class="TokyoTechPortal.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TokyoTechPortal"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Loaded="Page_Loaded">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <RelativePanel>
+            <SplitView x:Name="splitView" DisplayMode="CompactOverlay"
+                       CompactPaneLength="0"
+                       OpenPaneLength="250"
+                       IsPaneOpen="{Binding ElementName=toggleButton, Path=IsChecked, Mode=TwoWay}"
+                       PaneBackground="#CCCCCC"
+                       RelativePanel.Below="topBar"
+                       RelativePanel.AlignLeftWithPanel="True"
+                       RelativePanel.AlignRightWithPanel="True"
+                       RelativePanel.AlignBottomWithPanel="True">
+                <SplitView.Pane>
+                    <RelativePanel>
+                        <ListView x:Name="listView" HorizontalAlignment="Stretch" VerticalAlignment="Top">
+                            <ListViewItem Content="東工大ポータルメニュー" Tapped="ListViewItem_Tapped"/>
+                            <ListViewItem Content="Tokyo Tech Mail" Tapped="ListViewItem_Tapped"/>
+                            <ListViewItem Content="教務Webシステム" Tapped="ListViewItem_Tapped"/>
+                            <ListViewItem Content="TOKYO TECH OCW-i" Tapped="ListViewItem_Tapped"/>
+                            <ListViewItem Content="図書館サービス:TDL Online Request" Tapped="ListViewItem_Tapped"/>
+                            <ListViewItem Content="TSUBAME2.5利用ポータル" Tapped="ListViewItem_Tapped"/>
+                            <ListViewItem Content="東工大学修ポートフォリオ" Tapped="ListViewItem_Tapped"/>
+                            <ListViewItem Content="学認" Tapped="ListViewItem_Tapped"/>
+                            <ListViewItem Content="パスワード変更" Tapped="ListViewItem_Tapped"/>
+                            <ListViewItem Content="タイムアウト設定" Tapped="ListViewItem_Tapped"/>
+                            <ListViewItem Content="Mailing List" Tapped="ListViewItem_Tapped"/>
+                        </ListView>
+                        <AppBarButton Margin="5" RelativePanel.AlignBottomWithPanel="True" Tapped="AppBarButton_Tapped">
+                            <AppBarButton.Icon>
+                                <SymbolIcon Symbol="Setting" RenderTransformOrigin="0.5,0.5">
+                                    <SymbolIcon.RenderTransform>
+                                        <ScaleTransform ScaleX="1.4" ScaleY="1.4"/>
+                                    </SymbolIcon.RenderTransform>
+                                </SymbolIcon>
+                            </AppBarButton.Icon>
+                        </AppBarButton>
+                    </RelativePanel>
+                </SplitView.Pane>
+                <SplitView.Content>
+                    <Frame x:Name="mainFrame"/>
+                </SplitView.Content>
+            </SplitView>
+            <RelativePanel x:Name="topBar" Background="#005396" 
+                           RelativePanel.AlignLeftWithPanel="True"
+                           RelativePanel.AlignRightWithPanel="True">
+                <ToggleButton x:Name="toggleButton" Width="48" Height="48" >
+                    <ToggleButton.Content>
+                        <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE700;"/>
+                    </ToggleButton.Content>
+                </ToggleButton>
+                <Border x:Name="titleBar" Background="Transparent"
+                        RelativePanel.RightOf="toggleButton"
+                        RelativePanel.AlignTopWithPanel="True"
+                        RelativePanel.AlignBottomWithPanel="True"
+                        RelativePanel.AlignRightWithPanel="True">
+                    <TextBlock x:Name="title" VerticalAlignment="Center" Margin="10,0,0,0" 
+                           FontWeight="Bold" FontSize="20" Foreground="White" Text="東工大ポータルメニュー"/>
+                </Border>
+            </RelativePanel>
+        </RelativePanel>
+    </Grid>
+</Page>
