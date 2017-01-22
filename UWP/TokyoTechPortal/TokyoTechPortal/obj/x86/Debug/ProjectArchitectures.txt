@@ -1,1 +1,1 @@
-C:\Users\Yusuke\Documents\Visual Studio 2017\Repos\TokyoTechPortal\TokyoTechPortal\TokyoTechPortal\TokyoTechPortal.vbproj;x86
+C:\Users\Yusuke\Documents\Visual Studio 2017\Repos\TokyoTechPortal\UWP\TokyoTechPortal\TokyoTechPortal\TokyoTechPortal.vbproj;x86

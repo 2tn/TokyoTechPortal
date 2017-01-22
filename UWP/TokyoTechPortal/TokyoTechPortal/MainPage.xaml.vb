@@ -9,15 +9,11 @@ Public NotInheritable Class MainPage
         ApplicationView.GetForCurrentView().TitleBar.ButtonBackgroundColor = Windows.UI.Colors.Transparent
         Window.Current.SetTitleBar(titleBar)
         mainFrame.Navigate(GetType(WebViewPage))
-
-        CType(mainFrame.Content, WebViewPage).UserName = ""
-        CType(mainFrame.Content, WebViewPage).Password = ""
-        CType(mainFrame.Content, WebViewPage).Matrix = ""
     End Sub
 
     Private Sub ListViewItem_Tapped(sender As ListViewItem, e As TappedRoutedEventArgs)
         If mainFrame.Content.GetType IsNot GetType(WebViewPage) Then
-            Return
+            mainFrame.Navigate(GetType(WebViewPage))
         End If
         Select Case sender.Content
             Case "東工大ポータルメニュー"
@@ -48,6 +44,16 @@ Public NotInheritable Class MainPage
     End Sub
 
     Private Sub AppBarButton_Tapped(sender As Object, e As TappedRoutedEventArgs)
+        mainFrame.Navigate(GetType(Settings))
+        splitView.IsPaneOpen = False
+        title.Text = "設定"
+    End Sub
 
+    Private Sub backButton_Click(sender As Object, e As RoutedEventArgs)
+        If TypeOf mainFrame.Content Is WebViewPage Then
+            CType(mainFrame.Content, WebViewPage).WebView_GoBack()
+        Else
+            mainFrame.GoBack()
+        End If
     End Sub
 End Class

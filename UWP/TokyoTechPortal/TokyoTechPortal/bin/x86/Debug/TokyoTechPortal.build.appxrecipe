@@ -10,19 +10,19 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>f48c0fd4-934d-4fe8-91d4-d1366104091c</PackageIdentityName>
     <PackageIdentityPublisher>CN=Yusuke</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\Yusuke\Documents\Visual Studio 2017\Repos\TokyoTechPortal\TokyoTechPortal\TokyoTechPortal\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Yusuke\Documents\Visual Studio 2017\Repos\TokyoTechPortal\UWP\TokyoTechPortal\TokyoTechPortal\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Yusuke\Documents\Visual Studio 2017\Repos\TokyoTechPortal\TokyoTechPortal\TokyoTechPortal\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Yusuke\Documents\Visual Studio 2017\Repos\TokyoTechPortal\UWP\TokyoTechPortal\TokyoTechPortal\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Yusuke\Documents\Visual Studio 2017\Repos\TokyoTechPortal\TokyoTechPortal\TokyoTechPortal\bin\x86\Debug\TokyoTechPortal.exe">
+    <AppxPackagedFile Include="C:\Users\Yusuke\Documents\Visual Studio 2017\Repos\TokyoTechPortal\UWP\TokyoTechPortal\TokyoTechPortal\bin\x86\Debug\TokyoTechPortal.exe">
       <PackagePath>entrypoint\TokyoTechPortal.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Yusuke\.nuget\packages\Microsoft.CSharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
@@ -367,47 +367,47 @@
     <AppxPackagedFile Include="C:\Users\Yusuke\.nuget\packages\System.Xml.XmlSerializer\4.0.11\lib\netcore50\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Yusuke\Documents\Visual Studio 2017\Repos\TokyoTechPortal\TokyoTechPortal\TokyoTechPortal\My Project\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\Yusuke\Documents\Visual Studio 2017\Repos\TokyoTechPortal\UWP\TokyoTechPortal\TokyoTechPortal\My Project\Default.rd.xml">
       <PackagePath>My Project\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Yusuke\Documents\Visual Studio 2017\Repos\TokyoTechPortal\TokyoTechPortal\TokyoTechPortal\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Yusuke\Documents\Visual Studio 2017\Repos\TokyoTechPortal\UWP\TokyoTechPortal\TokyoTechPortal\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Yusuke\Documents\Visual Studio 2017\Repos\TokyoTechPortal\TokyoTechPortal\TokyoTechPortal\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Yusuke\Documents\Visual Studio 2017\Repos\TokyoTechPortal\UWP\TokyoTechPortal\TokyoTechPortal\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Yusuke\Documents\Visual Studio 2017\Repos\TokyoTechPortal\TokyoTechPortal\TokyoTechPortal\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Yusuke\Documents\Visual Studio 2017\Repos\TokyoTechPortal\UWP\TokyoTechPortal\TokyoTechPortal\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Yusuke\Documents\Visual Studio 2017\Repos\TokyoTechPortal\TokyoTechPortal\TokyoTechPortal\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Yusuke\Documents\Visual Studio 2017\Repos\TokyoTechPortal\UWP\TokyoTechPortal\TokyoTechPortal\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Yusuke\Documents\Visual Studio 2017\Repos\TokyoTechPortal\TokyoTechPortal\TokyoTechPortal\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\Yusuke\Documents\Visual Studio 2017\Repos\TokyoTechPortal\UWP\TokyoTechPortal\TokyoTechPortal\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Yusuke\Documents\Visual Studio 2017\Repos\TokyoTechPortal\TokyoTechPortal\TokyoTechPortal\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\Yusuke\Documents\Visual Studio 2017\Repos\TokyoTechPortal\UWP\TokyoTechPortal\TokyoTechPortal\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Yusuke\Documents\Visual Studio 2017\Repos\TokyoTechPortal\TokyoTechPortal\TokyoTechPortal\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Yusuke\Documents\Visual Studio 2017\Repos\TokyoTechPortal\UWP\TokyoTechPortal\TokyoTechPortal\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Yusuke\Documents\Visual Studio 2017\Repos\TokyoTechPortal\TokyoTechPortal\TokyoTechPortal\bin\x86\Debug\TokyoTechPortal.xr.xml">
+    <AppxPackagedFile Include="C:\Users\Yusuke\Documents\Visual Studio 2017\Repos\TokyoTechPortal\UWP\TokyoTechPortal\TokyoTechPortal\bin\x86\Debug\TokyoTechPortal.xr.xml">
       <PackagePath>TokyoTechPortal.xr.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Yusuke\Documents\Visual Studio 2017\Repos\TokyoTechPortal\TokyoTechPortal\TokyoTechPortal\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Yusuke\Documents\Visual Studio 2017\Repos\TokyoTechPortal\UWP\TokyoTechPortal\TokyoTechPortal\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Yusuke\Documents\Visual Studio 2017\Repos\TokyoTechPortal\TokyoTechPortal\TokyoTechPortal\bin\x86\Debug\Core\TokyoTechPortal.exe">
+    <AppxPackagedFile Include="C:\Users\Yusuke\Documents\Visual Studio 2017\Repos\TokyoTechPortal\UWP\TokyoTechPortal\TokyoTechPortal\bin\x86\Debug\Core\TokyoTechPortal.exe">
       <PackagePath>TokyoTechPortal.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

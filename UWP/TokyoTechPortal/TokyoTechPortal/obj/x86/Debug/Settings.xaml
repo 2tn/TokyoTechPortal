@@ -1,4 +1,4 @@
-﻿<Page
+﻿<Page x:ConnectionId='1'
     x:Class="TokyoTechPortal.Settings"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -6,10 +6,10 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Loaded="Page_Loaded">
+                        >
 
   <RelativePanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-    <Grid x:Name="grid"
+    <Grid x:ConnectionId='2' x:Name="grid"
           RelativePanel.AlignLeftWithPanel="True"
           RelativePanel.AlignRightWithPanel="True"
           RelativePanel.AlignTopWithPanel="True">
@@ -29,26 +29,27 @@
         <ColumnDefinition Width="2*"/>
       </Grid.ColumnDefinitions>
       <TextBlock Text="ユーザー名" Grid.Column="0" Grid.Row="0" TextAlignment="Center" VerticalAlignment="Center" />
-      <TextBox x:Name="username" Grid.Column="1" Grid.Row="0" Margin="0,5,0,5"/>
+      <TextBox x:ConnectionId='4' x:Name="username" Grid.Column="1" Grid.Row="0" Margin="0,5,0,5"/>
       <TextBlock Text="パスワード" Grid.Column="0" Grid.Row="1" TextAlignment="Center" VerticalAlignment="Center"/>
-      <PasswordBox x:Name="password" Grid.Column="1" Grid.Row="1" Margin="0,5,0,5"/>
+      <PasswordBox x:ConnectionId='5' x:Name="password" Grid.Column="1" Grid.Row="1" Margin="0,5,0,5"/>
       <TextBlock Text="マトリクス1行目" Grid.Column="0" Grid.Row="2" TextAlignment="Center" VerticalAlignment="Center"/>
-      <PasswordBox x:Name="matrix_1" Grid.Column="1" Grid.Row="2" Margin="0,5,0,5"/>
+      <PasswordBox x:ConnectionId='6' x:Name="matrix_1" Grid.Column="1" Grid.Row="2" Margin="0,5,0,5"/>
       <TextBlock Text="マトリクス2行目" Grid.Column="0" Grid.Row="3" TextAlignment="Center" VerticalAlignment="Center"/>
-      <PasswordBox x:Name="matrix_2" Grid.Column="1" Grid.Row="3" Margin="0,5,0,5"/>
+      <PasswordBox x:ConnectionId='7' x:Name="matrix_2" Grid.Column="1" Grid.Row="3" Margin="0,5,0,5"/>
       <TextBlock Text="マトリクス3行目" Grid.Column="0" Grid.Row="4" TextAlignment="Center" VerticalAlignment="Center"/>
-      <PasswordBox x:Name="matrix_3" Grid.Column="1" Grid.Row="4" Margin="0,5,0,5"/>
+      <PasswordBox x:ConnectionId='8' x:Name="matrix_3" Grid.Column="1" Grid.Row="4" Margin="0,5,0,5"/>
       <TextBlock Text="マトリクス4行目" Grid.Column="0" Grid.Row="5" TextAlignment="Center" VerticalAlignment="Center"/>
-      <PasswordBox x:Name="matrix_4" Grid.Column="1" Grid.Row="5" Margin="0,5,0,5"/>
+      <PasswordBox x:ConnectionId='9' x:Name="matrix_4" Grid.Column="1" Grid.Row="5" Margin="0,5,0,5"/>
       <TextBlock Text="マトリクス5行目" Grid.Column="0" Grid.Row="6" TextAlignment="Center" VerticalAlignment="Center"/>
-      <PasswordBox x:Name="matrix_5" Grid.Column="1" Grid.Row="6" Margin="0,5,0,5"/>
+      <PasswordBox x:ConnectionId='10' x:Name="matrix_5" Grid.Column="1" Grid.Row="6" Margin="0,5,0,5"/>
       <TextBlock Text="マトリクス6行目" Grid.Column="0" Grid.Row="7" TextAlignment="Center" VerticalAlignment="Center"/>
-      <PasswordBox x:Name="matrix_6" Grid.Column="1" Grid.Row="7" Margin="0,5,0,5"/>
+      <PasswordBox x:ConnectionId='11' x:Name="matrix_6" Grid.Column="1" Grid.Row="7" Margin="0,5,0,5"/>
       <TextBlock Text="マトリクス7行目" Grid.Column="0" Grid.Row="8" TextAlignment="Center" VerticalAlignment="Center"/>
-      <PasswordBox x:Name="matrix_7" Grid.Column="1" Grid.Row="8" Margin="0,5,0,5"/>
+      <PasswordBox x:ConnectionId='12' x:Name="matrix_7" Grid.Column="1" Grid.Row="8" Margin="0,5,0,5"/>
     </Grid>
-    <Button x:Name="saveSettings" Margin="20" Height="40" Width="100" Content="保存" Click="saveSettings_Click"
+    <Button x:ConnectionId='3' x:Name="saveSettings" Margin="20" Height="40" Width="100" Content="保存"                           
             RelativePanel.AlignBottomWithPanel="True"
             RelativePanel.AlignRightWithPanel="True"/>
   </RelativePanel>
 </Page>
+

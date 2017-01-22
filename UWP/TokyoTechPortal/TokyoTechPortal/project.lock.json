@@ -21962,10 +21962,10 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\Users\\Yusuke\\Documents\\Visual Studio 2017\\Repos\\TokyoTechPortal\\TokyoTechPortal\\TokyoTechPortal\\TokyoTechPortal.vbproj",
+      "projectUniqueName": "C:\\Users\\Yusuke\\Documents\\Visual Studio 2017\\Repos\\TokyoTechPortal\\UWP\\TokyoTechPortal\\TokyoTechPortal\\TokyoTechPortal.vbproj",
       "projectName": "TokyoTechPortal",
-      "projectPath": "C:\\Users\\Yusuke\\Documents\\Visual Studio 2017\\Repos\\TokyoTechPortal\\TokyoTechPortal\\TokyoTechPortal\\TokyoTechPortal.vbproj",
-      "projectJsonPath": "C:\\Users\\Yusuke\\Documents\\Visual Studio 2017\\Repos\\TokyoTechPortal\\TokyoTechPortal\\TokyoTechPortal\\project.json",
+      "projectPath": "C:\\Users\\Yusuke\\Documents\\Visual Studio 2017\\Repos\\TokyoTechPortal\\UWP\\TokyoTechPortal\\TokyoTechPortal\\TokyoTechPortal.vbproj",
+      "projectJsonPath": "C:\\Users\\Yusuke\\Documents\\Visual Studio 2017\\Repos\\TokyoTechPortal\\UWP\\TokyoTechPortal\\TokyoTechPortal\\project.json",
       "outputType": "UAP"
     },
     "dependencies": {

@@ -2,6 +2,7 @@
 
 Imports System.Text.RegularExpressions
 Imports Windows.Foundation
+Imports Windows.Security.Credentials
 Imports Windows.Web.Http
 Imports Windows.Web.Http.Headers
 ''' <summary>
@@ -9,7 +10,18 @@ Imports Windows.Web.Http.Headers
 ''' </summary>
 Public NotInheritable Class WebViewPage
     Inherits Page
+
+    Private Const CREDENTIAL_ACCOUNT As String = "TokyoTechPortal"
     Private Async Sub Password_SubmitAsync()
+
+        Dim vault As New PasswordVault
+        Dim cred As PasswordCredential
+        cred = vault.Retrieve(CREDENTIAL_ACCOUNT, "UserName")
+        cred.RetrievePassword()
+        Dim UserName As String = cred.Password
+        cred = vault.Retrieve(CREDENTIAL_ACCOUNT, "Password")
+        cred.RetrievePassword()
+        Dim Password As String = cred.Password
         Try
             Dim keyString As String = Await mainWebView.InvokeScriptAsync("eval", New String() {
                                                                           "(function(){
@@ -45,10 +57,20 @@ Public NotInheritable Class WebViewPage
         Catch ex As Exception
             Debug.WriteLine(ex.Message)
         End Try
+        UserName = "123456789"
+        Password = "123456789012345678901234567890"
     End Sub
 
     Private Async Sub Matix_SubmitAsync()
         Dim matrixChars(2) As Char
+        Dim matrix As String = ""
+        For i = 1 To 7
+            Dim vault As New PasswordVault
+            Dim cred As PasswordCredential
+            cred = vault.Retrieve(CREDENTIAL_ACCOUNT, "Matrix_" & i)
+            cred.RetrievePassword()
+            matrix &= cred.Password
+        Next
         Try
             Dim htmlString As String = Await mainWebView.InvokeScriptAsync("eval", New String() {
                                                                            "(function(){
@@ -61,7 +83,7 @@ Public NotInheritable Class WebViewPage
                 Dim name As Integer = AscW(m.Groups(1).Value(0)) - 65
                 Dim value As Integer = m.Groups(2).Value - 1
                 m = m.NextMatch()
-                matrixChars(i) = Matrix(name * 7 + value)
+                matrixChars(i) = Matrix(value * 10 + name)
             Next
             Dim keyString As String = Await mainWebView.InvokeScriptAsync("eval", New String() {
                                                                           "(function(){
@@ -101,8 +123,9 @@ Public NotInheritable Class WebViewPage
             mainWebView.NavigateWithHttpRequestMessage(post)
         Catch ex As Exception
             Debug.WriteLine(ex.Message)
-
         End Try
+
+        matrix = "0123456789012345678901234567890123456789012345678901234567890123456789"
     End Sub
 
     Private Async Sub Page_LoadedAsync(sender As Object, e As RoutedEventArgs)
@@ -138,33 +161,8 @@ Public NotInheritable Class WebViewPage
         mainWebView.Navigate(uri)
     End Sub
 
-    Private _username As String
-    Public Property UserName() As String
-        Get
-            Return _username
-        End Get
-        Set(ByVal value As String)
-            _username = value
-        End Set
-    End Property
+    Public Sub WebView_GoBack()
+        mainWebView.GoBack()
+    End Sub
 
-    Private _password As String
-    Public Property Password() As String
-        Get
-            Return _password
-        End Get
-        Set(ByVal value As String)
-            _password = value
-        End Set
-    End Property
-
-    Private _matrix As String
-    Public Property Matrix() As String
-        Get
-            Return _matrix
-        End Get
-        Set(ByVal value As String)
-            _matrix = value
-        End Set
-    End Property
 End Class
